@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="public/main.css">
+  <title>White Space</title>
+</head>
+<body>
+  <main>
+    <div class="main-body">
+      <div class="heading">
+        <h2>BIAS TEST</h2>
+      </div>
+      <div class="image-example">
+        <img src="public/img/icons.jpg" alt="bias test example" class="image-icon-instructions">
+      </div>
+      <div class="homedescription">
+        <p>Taking the Bias Test is simple. Compare copy with imagery based on your instinctive response. Using imagery in design is based on this decisive method, so do not reflect on wrong and right answers.</p>
+      </div>
+      <div class="biasform">
+        <form action="file:///C:/Developer/freelance/whitespace/quiz_page.html">
+          <div class="row">
+            <input type="text" name="full_name" class="inputfield"/>
+            <label class="inputlabel" for="full_name">NAME</label>
+          </div>
+          <div class="row">
+            <input type="text" name="occupation" class="inputfield" />
+            <label class="inputlabel" for="occupation">OCCUPATION</label>
+          </div>
+          <div class="flex-row">
+            <div class="column">
+              <select name="age" class="stackinputfield">
+                <option>--Select age--</option>
+                <option value="under12">Under 12</option>
+                <option value="13to20">13 to 20</option>
+                <option value="21to30">21 to 30</option>
+                <option value="31to40">31 to 40</option>
+                <option value="41to50">41 to 50</option>
+                <option value="over50">Over 50</option>
+              </select>
+              <label class="inputlabel" for="age">AGE</label>
+            </div>
+            <div class="column">  
+              <select name="gender" class="stackinputfield">
+                <option>--Select gender--</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+              </select>
+              <label class="inputlabel" for="gender">GENDER</label>
+            </div>
+            <div class="column">
+              <select name="race" class="stackinputfield">
+                <option>--Select race--</option>
+                <option value="americanindian">American Indian or Alaska Native</option>
+                <option value="asian">Asian</option>
+                <option value="africanamerican">Black or African American</option>
+                <option value="hispanic">Hispanic or Latino</option>
+                <option value="pacificislander">Native Hawaiian or Other Pacific Islander</option>
+                <option value="white">White</option>
+              </select>
+              <label class="inputlabel" for="race">RACE</label>
+            </div>
+          </div>
+          <div class="submitrow">
+            <input type="submit" value="TAKE TEST" class="homesubmit" />
+          </div>
+        </form>
+      </div>
+    </div>
+    
+    <script src="public/main.js"></script>
+  </main>
+</body>
+</html>

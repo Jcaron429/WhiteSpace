@@ -1,0 +1,300 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  margin: 15px;
+  max-width: 375px;
+}
+
+.main-body {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+/* H O M E  P A G E */
+.heading {
+  margin: 12px;
+}
+
+.heading h2 {
+  margin: 0;
+}
+
+.homedescription {
+  margin: 12px;
+  line-height: 120%;
+}
+
+.inputfield {
+  background-color: #f4e6d2;
+  width: 350px;
+  margin: 12px;
+  border: none;
+  height: 35px;
+}
+
+.inputlabel {
+  margin: 12px;
+}
+
+.stackinputfield {
+  background-color: #f4e6d2;
+  width: 113px;
+  height: 35px;
+  border: none;
+  margin: 0 2px;
+}
+
+.homesubmit {
+  background-color: #483729;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+.submitrow {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 768px) {
+  main {
+    max-width: 100vw;
+  }
+
+  .main-body {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .heading {
+    order: 1;
+    height: 500px;
+    position: absolute;
+    bottom: 0;
+  }
+
+  div.image-example {
+    text-align: start;
+    order: 3;
+  }
+
+  .homedescription {
+    order: 2;
+  }
+
+  .biasform {
+    order: 4;
+  }
+
+  .submitrow {
+    display: flex;
+    justify-content: start;
+  }
+}
+
+/* Q U I Z  P A G E */
+
+.profilebox {
+  height: 300px;
+}
+.profiledisplay {
+  justify-content: center;
+  display: flex;
+}
+
+.test-description p {
+  margin: 2px;
+}
+
+.errorbox {
+  height: 25px;
+}
+
+.errorbox p {
+  margin: 0;
+  color: red;
+}
+
+.image-example {
+  text-align: center;
+}
+
+.image-icon-instructions {
+  max-width: 345px;
+}
+
+.row > *{
+  display: block;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  max-width: 375px;
+  margin: 12px;
+}
+
+/* Cards Carousel */
+.cardbox {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  height: auto;
+}
+
+.textcards {
+  display: none;
+  display: flex;
+  justify-content: center;
+}
+
+img.resize {
+  width: 40%;
+  height: 100%;
+}
+
+img.finalresize {
+  width: 20%;
+  height: 100%;
+}
+
+img.finalscore {
+  width: 100%;
+  height: 100%;
+}
+.firstscorecontainer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+.secondscorecontainer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+.correct {
+  background-color: greenyellow;
+}
+
+.incorrect {
+  background-color: red
+}
+
+.carouselbuttons {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  bottom: 60px;
+}
+
+.prev, .next {
+  cursor: pointer;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+
+}
+
+.prev:hover, .next:hover {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.textdot, .profdot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.submitpictures {
+  text-align: center;
+  margin: 5px;
+}
+
+.resultsbox {
+  text-align: center;
+}
+
+.confirmprofcards {
+  margin: 0 2px;
+}
+
+.submitrestartbutton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.confirmbutton {
+  display: flex;
+  justify-content: center;
+  background-color: #483729;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-weight: bold;
+  width: 113px;
+  height: 35px;
+  margin: 5px;
+}
+
+.activeCard {
+  border: 1px solid blue;
+}
+
+.usedCard {
+  -webkit-filter: blur(2px);
+  filter: blur(2px);
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="public/main.css">
+  <title>White Space</title>
+</head>
+<body>
+  <div class="mainbody">
+    <div class="heading">
+      <h2>BIAS TEST</h2>
+    </div>
+    <div class="homedescription">
+      <p>Use your instincts to match the text to the profile picture. You can go back and change the answers, but once you click the "submit" button, the test is over.</p>
+    </div>
+    <div class="profilebox">
+      <div class="errorbox">
+      </div>
+      <div class="profiledisplay profcards">
+        <img id="profile1" class="resize fade" onclick="profileCard(event)" src="public/img/profile1.jpg" alt="image"/>
+      </div>
+      <div class="profiledisplay profcards">
+        <img id="profile2" class="resize fade" onclick="profileCard(event)" src="public/img/profile2.jpg" alt="image"/>
+      </div>
+      <div class="profiledisplay profcards">
+        <img id="profile3" class="resize fade" onclick="profileCard(event)" src="public/img/profile3.jpg" alt="image"/>
+      </div>
+      <div class="profiledisplay profcards">
+        <img id="profile4" class="resize fade" onclick="profileCard(event)" src="public/img/profile4.jpg" alt="image"/>
+      </div>
+      <div class="profiledisplay profcards">
+        <img id="profile5" class="resize fade" onclick="profileCard(event)" src="public/img/profile5.jpg" alt="image"/>
+      </div>
+      <div class="profiledisplay profcards">
+        <img id="profile6" class="resize fade" onclick="profileCard(event)" src="public/img/profile6.jpg" alt="image"/>
+      </div>
+      <div class="profiledisplay profcards">
+        <img id="profile7" class="resize fade" onclick="profileCard(event)" src="public/img/profile7.jpg" alt="image"/>
+      </div>
+      <div class="profiledisplay profcards">
+        <img id="profile8" class="resize fade" onclick="profileCard(event)" src="public/img/profile8.jpg" alt="image"/>
+      </div>
+      <div class="profiledisplay profcards">
+        <img id="profile9" class="resize fade" onclick="profileCard(event)" src="public/img/profile9.jpg" alt="image"/>
+      </div>
+      <div class="profiledisplay profcards">
+        <img id="profile10" class="resize fade" onclick="profileCard(event)"  src="public/img/profile10.jpg" alt="image"/>
+      </div>
+      <div class="carouselbuttons">
+        <a id="prev" class="prev" onclick="plusProfCard(-1)"><</a>
+        <a id="next" class="next" onclick="plusProfCard(1)">></a>
+      </div>
+      <div style="text-align:center">
+          <span class="profdot" onclick="currentProfCard(1)"></span>
+          <span class="profdot" onclick="currentProfCard(2)"></span>
+          <span class="profdot" onclick="currentProfCard(3)"></span>
+          <span class="profdot" onclick="currentProfCard(4)"></span>
+          <span class="profdot" onclick="currentProfCard(5)"></span>
+          <span class="profdot" onclick="currentProfCard(6)"></span>
+          <span class="profdot" onclick="currentProfCard(7)"></span>
+          <span class="profdot" onclick="currentProfCard(8)"></span>
+          <span class="profdot" onclick="currentProfCard(9)"></span>
+          <span class="profdot" onclick="currentProfCard(10)"></span>
+      </div>
+    </div>
+    <div class="cardbox">
+      <div class="textcards fade" onclick="textCard(event)">
+        <img id="text1" class="resize" src="public/img/text1.jpg"/>
+        <img id="text2" class="resize" src="public/img/text2.jpg"/>
+      </div>
+      
+      <div class="textcards fade" onclick="textCard(event)">
+        <img id="text3" class="resize" src="public/img/text3.jpg"/>
+        <img id="text4" class="resize" src="public/img/text4.jpg"/>        
+      </div>
+
+      <div class="textcards fade" onclick="textCard(event)">
+          <img id="text5" class="resize" src="public/img/text5.jpg"/>
+          <img id="text6" class="resize" src="public/img/text6.jpg"/>
+      </div>
+
+      <div class="textcards fade" onclick="textCard(event)">
+          <img id="text7" class="resize" src="public/img/text7.jpg"/>
+          <img id="text8" class="resize" src="public/img/text8.jpg"/>
+      </div>
+
+      <div class="textcards fade" onclick="textCard(event)">
+          <img id="text9" class="resize" src="public/img/text9.jpg"/>
+          <img id="text10" class="resize" src="public/img/text10.jpg"/>
+      </div>
+      <div class="carouselbuttons">
+        <a id="prev" class="prev" onclick="plusTextCard(-1)"><</a>
+        <a id="next" class="next" onclick="plusTextCard(1)">></a>
+      </div>
+      
+      <div style="text-align:center">
+        <span class="textdot" onclick="currentTextCard(1)"></span>
+        <span class="textdot" onclick="currentTextCard(2)"></span>
+        <span class="textdot" onclick="currentTextCard(3)"></span>
+        <span class="textdot" onclick="currentTextCard(4)"></span>
+        <span class="textdot" onclick="currentTextCard(5)"></span>
+      </div>
+    </div>
+    <div class="submitpictures">
+      <button onclick="submitAll(event)" class="homesubmit">Submit</button>
+    </div>
+  </div>
+</body>
+<script src="public/main.js"></script>
+</html>
