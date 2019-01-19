@@ -184,7 +184,7 @@ const submitAll = e => {
     let arrStr = encodeURIComponent(JSON.stringify(finalArray));
     console.log(arrStr);
     let currentPage =
-      "file:///C:/Developer/freelance/whitespace/quiz_confirm_page.html";
+      "quiz_confirm_page.html";
     location.assign(`${currentPage}?profile=${arrStr}`);
   }
 };
@@ -223,7 +223,7 @@ const finalSubmit = e => {
   });
   let arrStr = encodeURIComponent(JSON.stringify(finalArr));
   location.assign(
-    `file:///C:/Developer/freelance/whitespace/quiz_results_page.html?results=${arrStr}`
+    `quiz_results_page.html?results=${arrStr}`
   );
 };
 
@@ -235,7 +235,7 @@ const restart = e => {
     window.confirm("Do you want to restart the quiz?")
   ) {
     location.assign(
-      `file:///C:/Developer/freelance/whitespace/quiz_page.html`
+      `quiz_page.html`
     );
   }
 };
